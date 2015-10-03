@@ -1,0 +1,166 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,700);
+
+/*----- Global reset ---------------------------------------------------------------*/		
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, 
+form, fieldset, input, textarea, label, p, blockquote, th, td 						{ margin:0;padding:0; }
+
+table 																				{ border-collapse:collapse;border-spacing:0; }
+fieldset, img 																		{ border:0; }
+address, caption, cite, code, dfn, em, strong, th, var 								{ font-style:normal;font-weight:normal; }
+strong 																				{ font-weight:bold; }
+ol, ul 																				{ list-style:none; }
+caption, th 																		{ text-align:left; }
+h1, h2, h3, h4, h5, h6 																{ font-size:100%;font-weight:normal; }
+q:before, q:after 																	{ content:''; }
+abbr, acronym 																		{ border:0; }
+
+
+
+/*----- Clearfix ------------------------------------------------------------------*/		
+.clearfix:after, .section:after, .fixed:after, .row:after							{ content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;	}
+.clearfix, .section, .fixed, .row													{ display: inline-block; 	}
+html[xmlns] .clearfix, html[xmlns] .section, html[xmlns] .fixed, html[xmlns] .row	{ display: block; 			}
+* html .clearfix, * html .section, * html .fixed, * html .row						{ height: 1%; 				}
+* 							 														{ outline: none; 			}
+  
+
+  
+/*----- Typography ----------------------------------------------------------------*/		
+
+	h1, h1 span																		{ font-size:22px;line-height:28px; }
+	h2, h2 span																		{ font-size:18px;line-height:26px; }
+	h3, h3 span																		{ font-size:16px;line-height:24px; }
+	h4, h4 span																		{ font-size:14px;line-height:22px; }
+	h5, h5 span																		{ font-size:12px;line-height:20px; }
+	h6, h6 span																		{ font-size:10px;line-height:18px; }
+	
+	blockquote, blockquote p														{ font-size:24px;line-height:26px; } 
+
+	h1 span, h2 span, h3 span, h4 span, h5 span, h6 span							{ color:#858585; }
+	
+	h1, h1 span, h2, h2 span, h3,h3 span, h4, h4 span, h5, h5 span, 
+	h6, h6 span, blockquote, blockquote p, blockquote span, #header .nav  			{ font-family: 'Droid Sans', arial, serif; } 
+
+	h1, h1 span, h2, h2 span, h3,h3 span, h4, h4 span, h5, h5 span, 
+	h6, h6 span																		{ margin-bottom:20px; }
+	
+	
+	body, p, span, div 																{ font-family: 'Droid Sans', arial, serif;font-size:12px;line-height:18px;color:#6d6d6d; } 
+	p 																				{ margin-bottom:15px; }
+	
+	a 																				{ color:#2b2b2b;text-decoration:none; }
+	a:link 																			{  }
+	a:visited 																		{  }
+	a:hover 																		{ text-decoration:underline; }
+	a:active 																		{ color:#000; } 
+	
+	body 																			{ background:#F8F8F0; }
+	body, html																		{ margin:0;padding:0;position:relative;height:100%; }
+	
+	
+	/*----- General ----------------------------------------------------------------*/
+	
+	.text-center 																	{ text-align:center !important; }
+	.last 																			{ margin-right:0px !important; }
+	.hr 																			{ height:1px;background:#e0e0e0;margin:25px 0; }
+	.strong																			{ text-weight:bold !important; }
+	.no-margin																		{ margin:0 !important; }
+	.text-left																		{ text-align:left !important; }
+	.text-right																		{ text-align:right !important; }
+	.text-center																	{ text-align:center !important; }
+	.inpad																			{ padding:15px !important; }
+	.topad																			{ padding-top:15px !important; }
+	.bopad																			{ padding-bottom:15px !important; }
+	.hpad																			{ padding:15px 0 15px 0 !important; }
+	.vpad																			{ padding:0 15px 0 15px !important; }
+	.img																			{ background:grey; }
+	
+	
+	/*----- Header ----------------------------------------------------------------*/
+	
+	
+	#wrapper-layout 																{ background:none no-repeat center top;padding:258px 0 50px 0 ;  }
+	#wrapper-content 																{ width:782px;height:520px;background:url('images/back-content.png') no-repeat;margin:auto;padding-top:40px; }
+	
+	
+	/*----- Content ----------------------------------------------------------------*/
+	
+	#content 																		{ padding-top: 100px; padding-bottom:25px;height:240px; }
+	#content h1 																	{ font-size:32px;color:#F92672;font-family:'Cabin', sans-serif;font-weight:bold;line-spacing:10pt; }
+	#content p 																		{ font-size:20px; color:#66D9EF;font-family: 'Cabin', sans-serif; line-height:25px; }
+	
+	
+	.countdown 																		{ padding-top:15px;width:680px;margin:auto; }
+	.countdown .countdown_section 													{ background:url('images/back-cowntdown.png') no-repeat 1px top;float:left;width:140px;height:145px;margin:0 15px;text-align:center;line-height:6px;	  }
+	.countdown .countdown_amount 													{ font-size:60px;color:#ab7100;text-shadow:0 1px #fedd98;line-height:120px;margin-bottom:5px;display:block; }
+	.countdown span 																{ font-size:10px;color:#999999;text-transform:uppercase;diaply:block;line-height:26px; }
+	
+	
+	.subscribe a  																	{ margin-left:10px;display:inline-block;float:left;height:45px;width:152px;background:url('images/subscribe-button.png') no-repeat left top; }
+	.subscribe a:link 																{  }
+	.subscribe a:visited 															{  }
+	.subscribe a:hover 																{ background-position:left center; }
+	.subscribe a:active 															{ background-position:left bottom; }
+	
+	.subscribe 																		{ width:464px;margin:auto;margin-top:35px;height:45px;background:transparent; }
+	.subscribe .field 																{ padding:5px;background:#f7f9fa;float:left;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px; }
+	
+	.subscribe>span 																{ display:block; }
+	.subscribe>span 																{ display:none;height:40px;line-height:40px;text-align:center;color:green;}
+	.subscribe>span.red 															{ color:red;line-height:10px !important; }
+	.subscribe>div 																	{ display:block;height:45px;padding:2px 0; }
+	  
+	.subscribe input 																{ line-height:30px;font-family:arial;width:275px;height:33px;padding-left:15px;border: 1px solid #C9C9C9;background: #ffffff;color: #c7c7c7;-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset, -5px -5px 0 0 #f5f5f6, 5px 5px 0 0 #f5f5f6, 5px 0 0 0 #f5f5f6, 0 5px 0 0 #f5f5f6, 5px -5px 0 0 #f5f5f6, -5px 5px 0 0 #f5f5f6;-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset, -5px -5px 0 0 #f5f5f6, 5px 5px 0 0 #f5f5f6, 5px 0 0 0 #f5f5f6, 0 5px 0 0 #f5f5f6, 5px -5px 0 0 #f5f5f6, -5px 5px 0 0 #f5f5f6;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset, -5px -5px 0 0 #f5f5f6, 5px 5px 0 0 #f5f5f6, 5px 0 0 0 #f5f5f6, 0 5px 0 0 #f5f5f6, 5px -5px 0 0 #f5f5f6, -5px 5px 0 0 #f5f5f6;}
+	
+	.subscribe input:focus 															{  border: 1px solid #bbbbbb;background: #ffffff;color: #545658;-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset, -5px -5px 0 0 #f1f1f3, 5px 5px 0 0 #f1f1f3, 5px 0 0 0 #f1f1f3, 0 5px 0 0 #f1f1f3, 5px -5px 0 0 #f1f1f3, -5px 5px 0 0 #f1f1f3;-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset, -5px -5px 0 0 #f1f1f3, 5px 5px 0 0 #f1f1f3, 5px 0 0 0 #f1f1f3, 0 5px 0 0 #f1f1f3, 5px -5px 0 0 #f1f1f3, -5px 5px 0 0 #f1f1f3;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset, -5px -5px 0 0 #f1f1f3, 5px 5px 0 0 #f1f1f3, 5px 0 0 0 #f1f1f3, 0 5px 0 0 #f1f1f3, 5px -5px 0 0 #f1f1f3, -5px 5px 0 0 #f1f1f3;}
+	
+	
+	/*----- Footer ----------------------------------------------------------------*/
+	
+	
+	#footer 																		{ padding:18px 0 20px 0;position:relative;height:60px; }
+	#footer img 																	{ vertical-align:middle;margin-right:5px; }
+	#footer span 																	{ color:#a9a9a9;font-size:11px;font-family:arial; }
+	#footer a 																		{ color:#61abcc;font-size:11px;font-family:arial; }
+	
+	.tweet-wrapper 																	{ height:25px; }
+	.tweet 																			{ display:none;text-align:center; }
+	
+	.social 																		{ padding-top:5px;text-align:center;display:block;min-width:110px;margin:auto; }
+	.social li 																		{ margin-right:2px; display: inline-block; *zoom: 1; *display: inline; }
+	.social a 																		{ display:block;margin-right:1px;width:24px;height:24px; }
+	
+	.contact 																		{ background:url('images/social-icons.png') no-repeat 0 0; }
+	.in 																			{ background:url('images/social-icons.png') no-repeat -24px 0; }
+	.facebook 																		{ background:url('images/social-icons.png') no-repeat -48px 0; }
+	.twitter 																		{ background:url('images/social-icons.png') no-repeat -72px 0; }
+	
+	.twitter:link 																	{  }
+	.twitter:visited 																{  }
+	.twitter:hover 																	{ background-position:-72px -24px; }
+	.twitter:active 																{  }
+	
+	.facebook:link 																	{  }
+	.facebook:visited 																{  }
+	.facebook:hover 																{ background-position:-48px -24px; }
+	.facebook:active 																{  }
+	
+	.in:link 																		{  }
+	.in:visited 																	{  }
+	.in:hover 																		{ background-position:-24px -24px; }
+	.in:active 																		{  }
+
+	.contact:link 																	{  }
+	.contact:visited 																{  }
+	.contact:hover 																	{ background-position:0 -24px; }
+	.contact:active 																{  }
+
+	
+	/*----- Credits ----------------------------------------------------------------*/
+	
+	#credits 																		{ width:780px;margin:auto; }
+	#credits span 																	{ font-size:11px;color:#b1b1b1;text-shadow:0 1px #fff;padding-left:40px;font-family:arial; }
+	#credits a 																		{ font-size:11px;color:#b1b1b1;text-shadow:0 1px #fff;float:right;padding-right:40px;font-family:arial; }
+	
+	
+	
