@@ -1,1 +1,1 @@
-Source code for my personal website: [karol.piczak.com](http://karol.piczak.com)
+Source code for my personal website: [www.karolpiczak.com](https://www.karolpiczak.com)
